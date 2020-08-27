@@ -1,0 +1,5 @@
+<h1> <%= Artist.all.each do |artist| %>
+    <ul>
+    <%= puts "#{artist.name} has #{artist.song_count} songs." %>
+    </ul>
+<% end %>
