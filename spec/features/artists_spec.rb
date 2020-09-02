@@ -26,9 +26,4 @@ describe 'artists', type: :feature do
     expect(page.status_code).to eq(200)
     expect(page).to have_content('Daft Punk')
   end
-
-  it 'shows the song count for each artist' do
-    visit artists_path
-    expect(page).to have_content('2 song')
-  end
 end
